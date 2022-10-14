@@ -1,0 +1,28 @@
+package com.mycompany.primeiraclasse;
+
+public class Livro {
+    String nome, autor;
+    int ano_lancamento, n_paginas, nota;
+    boolean lido;
+    
+    void status(){
+        System.out.println ("=====================================================================");
+        System.out.println ("Nome:" + this.nome);
+        System.out.println ("Autor:" + this.autor);
+        System.out.println ("Ano de lançamento:" + this.ano_lancamento);
+        System.out.println ("Número de páginas:" + this.n_paginas);
+        System.out.println ("Foi lido?" + this.lido);
+        System.out.println ("NOTA:" + this.nota);
+    }
+            
+    void doacao() {
+        if (lido == true) {
+           System.out.println ("Você já leu esse livro, será se não está na hora de doá-lo?");
+        }
+        else {
+           System.out.println ("Termine de ler o livro e depois doe para alguém que precisa.");
+        }
+    }
+            
+      void favoritos() {
+        
